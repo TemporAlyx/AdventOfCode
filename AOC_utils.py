@@ -14,7 +14,7 @@ if not os.path.exists("days"):
 
 cookies = json.load(open("days/cookies.json","r"))
 
-def get_day(day, year=2023):
+def get_day(day, year=2024):
     # check if the file already exists
     if os.path.exists(f"days/day{day}input.txt"):
         print(f"Day {day} input already downloaded")
