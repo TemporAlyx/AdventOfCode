@@ -27,6 +27,6 @@ def get_day(day, year=2024):
     
     with open(f'days/day{day}input.txt') as f:
         input_data = f.readlines()
-    input_data = [line[:-1] for line in input_data] # Remove \n
+    input_data = [line[:-1] if line[-1] == '\n' else line for line in input_data]
 
     return input_data
